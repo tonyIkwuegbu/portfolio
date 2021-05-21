@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-left: -25px;
+}
+footer .icon{
+    
+    max-width: 50px;
+    color: #2978b5;
+    margin-left: .5rem;
+    
+}
+
+footer img:not(:last-child){
+    margin-right: 10px;
+}
+@media (min-width:800px) {
+    footer{
+        text-align: left;
+    }
+}
