@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #dde8fc;
+  background-color: #d8e3e7;
 }
 
 /*Hide scrollbar*/
@@ -29,8 +29,7 @@ code {
 }
 p{
   line-height: 30px;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 h1,h2{
   font-family: "Ubuntu", cursive;

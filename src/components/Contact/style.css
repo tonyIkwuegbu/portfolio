@@ -13,6 +13,28 @@
 .contact p {
     margin-bottom: 20px;
 }
-.contact img{
+/* .contact img{
     width: 50px;
+} */
+
+
+.contact h4{
+    margin-bottom: 1rem;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+.contact form{
+    margin-bottom: 1.5rem;
+}
+.contact button{
+    margin: 1rem 1rem 1rem 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.contact form p{
+    color: darkgreen;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Ubuntu";
 }

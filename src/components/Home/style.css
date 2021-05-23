@@ -16,18 +16,25 @@
     font-family: "Ubuntu", cursive;
     font-size: 30px;
 }
-.home .title button{
+.home .title button {
     border: none ;
     outline: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 30px;
     color: #ffff;
-    padding: 10px 15px;
+    padding:  15px 20px;
     border-radius: 999px;
-    background-color: #3f71f4;
-    font-family: "Ubuntu", cursive;
-}.home .person{
+    background-color: #77acf1;
+    font-family: 'Alegreya Sans', sans-serif;
+    
+}
+.home .title button:hover{
+    background-color: #04009a;
+    font-weight: 800;
+}
+.home .person{
     width: 100%;
     margin-top: 20px;
     

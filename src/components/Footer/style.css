@@ -1,16 +1,25 @@
 footer{
+    
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     margin-left: -25px;
+    margin-top: 1rem;
 }
 footer .icon{
-    
+  font-size: 30px;
     max-width: 50px;
-    color: #2978b5;
     margin-left: .5rem;
+    color: #0061a8;
     
 }
+footer .git{
+    font-size: 30px;
+      max-width: 50px;
+      margin-left: .5rem;
+      color: black;
+      
+  }
 
 footer img:not(:last-child){
     margin-right: 10px;
