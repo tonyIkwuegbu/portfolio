@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import "./style.css";
 import Button from "@material-ui/core/Button";
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
     const [message, setMessage] = useState();
@@ -16,10 +18,18 @@ const Contact = () => {
   }));
   const classes = useStyles();
 
-  const handleChange = () =>{
-      setMessage("Thank you for your submission!");
-  }
+ 
+  function sendEmail(e) {
+    e.preventDefault();
 
+    emailjs.sendForm('gmail', 'template_5ztfryj', e.target, 'user_286yNR8cdPOFzEECcKLAB')
+      .then(() => {
+          setMessage("Thank you for your submission!");
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+    }
   return (
     <div className="contact">
       <h1>Contact me!</h1>
@@ -30,7 +40,6 @@ const Contact = () => {
         allowFullScreen=""
         aria-hidden="false"
         tabIndex="0"
-        loading="lazy"
       ></iframe>
       <h4>Address</h4>
       <p>Federal Capital Territory, Abuja</p>
@@ -50,9 +59,10 @@ const Contact = () => {
         Interested in working together?please fill out the form below and i'll
         get back to you as soon as i can.
       </h4>
-      <form autoComplete="off" action="mailto:ikwuegbuanthony@gmail.com" method="post" enctype="text/plain" onSubmit= {handleChange} >
+      <form onSubmit={ sendEmail } >
         <TextField
           id="filled-basic"
+          name="name"
           type="text"
           className={classes.root}
           label="Your Name"
@@ -62,6 +72,7 @@ const Contact = () => {
         <br />
         <TextField
           id="filled-basic"
+          name="email"
           className={classes.root}
           label="Your Email"
           type="email"
@@ -71,6 +82,7 @@ const Contact = () => {
         <br />
         <TextField
           id="filled-textarea"
+          name="message"
           className={classes.root}
           label="Your message"
           placeholder="Tell me a little about your project..."
@@ -87,7 +99,7 @@ const Contact = () => {
           Clear 
         </Button>
         </div>
-        <p>{message}</p>
+        <p> {message} </p>
       </form>
     </div>
   );
