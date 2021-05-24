@@ -11,10 +11,37 @@
     font-size: 18px;
     text-align: center;
 }
-.home .title p{
+.home .title .name{
     line-height: 50px;
-    font-family: "Ubuntu", cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
+    animation: text 2s ease-in-out;
+}
+@keyframes text{
+    0% {
+        letter-spacing: 15px;
+    }
+    100%{
+        letter-spacing: 1px;
+    }
+}
+
+.home .title .job{
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    animation: type 3s steps(18);
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes type {
+    0% {
+        width: 0ch;
+       
+    }
+    100% {
+        width: 18ch;
+    }
 }
 .home .title button {
     border: none ;
@@ -27,7 +54,7 @@
     padding:  15px 20px;
     border-radius: 999px;
     background-color:  #04009a;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 .home .title button:hover{
