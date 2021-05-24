@@ -14,18 +14,9 @@
 .home .title .name{
     line-height: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    
-    animation: text 2s ease-in-out;
+    font-size: 30px; 
 }
-@keyframes text{
-    0% {
-        letter-spacing: 15px;
-    }
-    100%{
-        letter-spacing: 1px;
-    }
-}
+
 
 .home .title .job{
     line-height: 50px;

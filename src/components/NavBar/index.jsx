@@ -47,7 +47,7 @@ const handleClose = () =>{
             <div className="list-wrapper">
             
             <img
-            src="https://github.com/DwinaTech/public-images/blob/main/menu-bars.png?raw=true"
+            src="https://cdn.iconscout.com/icon/free/png-512/bars-collection-view-application-grid-menu-44415.png"
             alt = "Menu bars"
             style = {{opacity: !open ? 1 : 0 }}
             onClick= {() => {
@@ -58,7 +58,7 @@ const handleClose = () =>{
 
             
            <img
-            src="https://github.com/DwinaTech/public-images/blob/main/cross-menu-icon.png?raw=true"
+            src="https://cdn3.iconfinder.com/data/icons/e-commerce-simple-ui-elements/100/TWalsh__close1-512.png"
             alt = "Menu cross"
             style = {{opacity: open ? 1 : 0 }}
             onClick= {() => {
