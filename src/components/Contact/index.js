@@ -7,7 +7,7 @@ import emailjs from 'emailjs-com';
 
 
 const Contact = () => {
-    const [message, setMessage] = useState();
+    const [message, setMessage] = useState(<p>Please enter your details correctly</p>);
    const useStyles = makeStyles((theme) => ({
     root: {
       "& > *": {
@@ -24,12 +24,15 @@ const Contact = () => {
 
     emailjs.sendForm('gmail', 'template_5ztfryj', e.target, 'user_286yNR8cdPOFzEECcKLAB')
       .then(() => {
-          setMessage("Thank you for your submission!");
+        
+          setMessage("Thank you  for your submission!");
+          
       }, (error) => {
           console.log(error.text);
       });
       e.target.reset();
     }
+    
   return (
     <div className="contact">
       <h1>Contact me!</h1>
@@ -61,7 +64,7 @@ const Contact = () => {
       </h4>
       <form onSubmit={ sendEmail } >
         <TextField
-          id="filled-basic"
+          
           name="name"
           type="text"
           className={classes.root}
@@ -71,7 +74,7 @@ const Contact = () => {
         />
         <br />
         <TextField
-          id="filled-basic"
+         
           name="email"
           className={classes.root}
           label="Your Email"
@@ -81,7 +84,7 @@ const Contact = () => {
         />
         <br />
         <TextField
-          id="filled-textarea"
+          
           name="message"
           className={classes.root}
           label="Your message"
