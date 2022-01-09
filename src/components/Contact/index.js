@@ -1,38 +1,36 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 import "./style.css";
-import Button from "@material-ui/core/Button";
-import emailjs from 'emailjs-com';
-
+import Button from "@mui/material/Button";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-    const [message, setMessage] = useState(<p>Please enter your details correctly</p>);
-   const useStyles = makeStyles((theme) => ({
-    root: {
-      "& > *": {
-        margin: theme.spacing(1),
-        width: "35ch",
-      },
-    },
-  }));
-  const classes = useStyles();
+  const [message, setMessage] = useState(
+    <p>Please enter your details correctly</p>
+  );
 
- 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_5ztfryj', e.target, 'user_286yNR8cdPOFzEECcKLAB')
-      .then(() => {
-        
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_5ztfryj",
+        e.target,
+        "user_286yNR8cdPOFzEECcKLAB"
+      )
+      .then(
+        () => {
           setMessage("Thank you  for your submission!");
-          
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
-    }
-    
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <div className="contact">
       <h1>Contact me!</h1>
@@ -47,62 +45,67 @@ const Contact = () => {
       <h4>Address</h4>
       <p>Federal Capital Territory, Abuja</p>
 
-      {/* 
-        <h4> Contact me directly on Whatsapp</h4>
-        <a href = "https://wa.link/enmows" 
-        target= "_blank" 
-        rel="noreferrer">
-        <img src="https://img.icons8.com/color/452/whatsapp--v1.png" 
-        alt="whatsapp-icon" 
-        /> 
-        </a>
-        <br/><br/> */}
+      <h4> Contact me directly on Whatsapp</h4>
+      <a href="https://wa.link/enmows" target="_blank" rel="noreferrer">
+        <img
+          src="https://img.icons8.com/color/452/whatsapp--v1.png"
+          alt="whatsapp-icon"
+        />
+      </a>
+      <br />
+      <br />
 
       <h4>
         Interested in working together?please fill out the form below and i'll
         get back to you as soon as i can.
       </h4>
-      <form onSubmit={ sendEmail } >
-        <TextField
-          
-          name="name"
-          type="text"
-          className={classes.root}
-          label="Your Name"
-          variant="filled"
-          required
-        />
-        <br />
-        <TextField
-         
-          name="email"
-          className={classes.root}
-          label="Your Email"
-          type="email"
-          variant="filled"
-          required
-        />
-        <br />
-        <TextField
-          
-          name="message"
-          className={classes.root}
-          label="Your message"
-          placeholder="Tell me a little about your project..."
-          multiline
-          variant="filled"
-          required
-        />{" "}
-        <br />
-        <div>
-        <Button variant="contained" color="primary" type="submit" >
-         Send
-        </Button>
-        <Button variant="contained" color="secondary" type="reset" >
-          Clear 
-        </Button>
-        </div>
-        <p> {message} </p>
+      <form onSubmit={sendEmail}>
+        <Box
+          component="form"
+          sx={{
+            "& > :not(style)": { m: 1, width: "35ch" },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField
+            id="filled-basic"
+            name="name"
+            type="text"
+            label="Your Name"
+            variant="filled"
+            required
+          />
+          <br />
+          <TextField
+            id="filled-basic"
+            name="email"
+            label="Your Email"
+            type="email"
+            variant="filled"
+            required
+          />
+          <br />
+          <TextField
+            id="filled-basic"
+            name="message"
+            label="Your message"
+            placeholder="Tell me a little about your project..."
+            multiline
+            variant="filled"
+            required
+          />{" "}
+          <br />
+          <div>
+            <Button variant="contained" color="primary" type="submit">
+              Send
+            </Button>
+            <Button variant="contained" color="secondary" type="reset">
+              Clear
+            </Button>
+          </div>
+          <p> {message} </p>
+        </Box>
       </form>
     </div>
   );
