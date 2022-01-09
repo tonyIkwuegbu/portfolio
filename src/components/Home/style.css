@@ -63,6 +63,7 @@
     width: 50%;
     display: block;
     margin: 3rem auto 0 auto;
+    border-radius: 50%;
     
 
 }
@@ -72,6 +73,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    
     .home .title,
     .home .person{
         width: 50%;
@@ -82,5 +84,6 @@
     .home .person img{
         width: 35%;
         margin-left: 4rem;
+        border-radius: 50%;
     }
 }
