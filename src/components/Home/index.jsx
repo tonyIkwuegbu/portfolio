@@ -8,7 +8,7 @@ const Home = () => {
         <h1>
           <p className="name">Hi,</p>
           <p className="name">I'm Tony</p>
-          <p className="job">Front-end Developer</p>
+          <p className="job">Software Developer</p>
         </h1>
         <Link to="about">
           <button>More Info</button>
