@@ -20,7 +20,7 @@ const About = () => {
         working with cutting-edge technologies in corporations, adding value to
         organizational growth and development through dynamic and innovative
         skills with the aim of achieving corporate goals and objectives. 
-        Here's a link to my <a href="https://www.dropbox.com/s/bt7ly7lcxpc3vnl/Anthony%20Ikwuegbu%20Dev%20CV.pdf?dl=0">resume</a> for further insight and consideration.
+      
       </p>
     </div>
   );
