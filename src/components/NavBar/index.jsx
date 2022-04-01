@@ -36,7 +36,7 @@ const NavBar = () => {
           </Link>
          
         </div>
-        <h1> <b style={{color: "#0E185F", fontWeight:"600"}}>DUSK</b> TO <b style={{color: "#0E185F",  fontWeight:"600"}}>DAWN</b> FUNERAL HOMES</h1>
+       
         <div className="list-wrapper">
           <img
             src="https://cdn.iconscout.com/icon/free/png-512/bars-collection-view-application-grid-menu-44415.png"
