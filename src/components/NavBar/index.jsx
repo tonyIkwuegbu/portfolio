@@ -34,8 +34,9 @@ const NavBar = () => {
           <Link to="/">
             <img src={`${process.env.PUBLIC_URL}/brand.png`} alt="brand" />
           </Link>
+         
         </div>
-
+        <h1> <b style={{color: "#0E185F", fontWeight:"600"}}>DUSK</b> TO <b style={{color: "#0E185F",  fontWeight:"600"}}>DAWN</b> FUNERAL HOMES</h1>
         <div className="list-wrapper">
           <img
             src="https://cdn.iconscout.com/icon/free/png-512/bars-collection-view-application-grid-menu-44415.png"
@@ -54,7 +55,7 @@ const NavBar = () => {
               setOpen(!open);
             }}
           />
-
+      
           <ul style={{ left: open ? "0" : "-100vw" }}>
             <li>
               <Link
@@ -74,7 +75,7 @@ const NavBar = () => {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/skills"
                 onClick={handleClose}
@@ -82,16 +83,16 @@ const NavBar = () => {
               >
                 Skills
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                to="/projects"
+                to="#"
                 onClick={handleClose}
                 style={{
-                  color: location.pathname === "/projects" && "#4071f4",
+                  color: location.pathname === "/gallery" && "#4071f4",
                 }}
               >
-                Projects
+                Gallery
               </Link>
             </li>
             <li>

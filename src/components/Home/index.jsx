@@ -6,12 +6,12 @@ const Home = () => {
     <div className="home">
       <div className="title">
         <h1>
-          <p className="name">Hi,</p>
-          <p className="name">I'm Tony</p>
-          <p className="job">Software Developer</p>
+          <p className="name">Welcome,</p>
+          <p className="name">I'm Elvis...</p>
+          <p className="job">CEO Dusk To Dawn</p>
         </h1>
         <Link to="about">
-          <button>More Info</button>
+          <button className="btn"> More Info</button>
         </Link>
       </div>
       <div className="person">
