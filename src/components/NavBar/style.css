@@ -11,10 +11,7 @@
   justify-content: space-between;
   
 }
-.nav-wrapper > h1 {
-  font-size: 28px;
-  font-family: "Poppins";
-}
+
 .logo {
   display: flex;
   max-width: 130px;
@@ -93,9 +90,7 @@
     display: inline-block;
     margin-bottom: 0;
   }
-  .nav-wrapper > h1 {
-    font-size: 28px;
-  }
+  
   .list-wrapper ul li:not(:last-child) {
     margin-right: 10px;
   }
