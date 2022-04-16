@@ -21,7 +21,7 @@ const Contact = () => {
         "jG0jfyteyiFBUYSrM"
       )
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text)
+        console.log('success!', response.status, response.text)
         setEmail('')
         setMessage('')
         setName('')
