@@ -6,6 +6,7 @@
     align-items: center;
 
 }
+
 .home .title{
     width: 100%;
     font-size: 18px;
@@ -14,14 +15,14 @@
 .home .title .name{
     line-height: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px; 
+    font-size: 25px; 
 }
 
 
 .home .title .job{
     line-height: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     
     animation: type 3s steps(18);
     overflow: hidden;
@@ -64,9 +65,10 @@
     display: block;
     margin: 3rem auto 0 auto;
     border-radius: 50%;
-    
-
+    transition: all .5s ease-in-out;
 }
+.home .person img:hover { transform: scale(1.1); }
+
 
 @media (min-width: 800px){
     .home{

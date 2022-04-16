@@ -3,24 +3,32 @@ import "./style.css";
 const About = () => {
   return (
     <div className="about">
-      <h1>Bio</h1>
+      <h2>About Dusk To Dawn</h2>
       <p>
-        I'm a Software Developer on Front-end speciality. Over the course of my
-        career in development, i've had experience building aesthetically
-        appealing and functional products with Javascript technologies. I have
-        provided web solutions to individuals and organizations which include
-        but not limited to designing, developing web based applications,
-        incorporating various technologies to deliver exceptional customer
-        experiences in a highly collaborative work environment.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui mauris,
+        luctus ut sapien ornare, volutpat porta ante. Ut ex quam, porttitor et
+        ante ac, accumsan fringilla lectus. Donec non molestie ante, nec gravida
+        felis. Nulla id odio ante. Proin erat risus, viverra id odio et,
+        efficitur accumsan massa. Duis at cursus risus, at sodales sapien. Proin
+        tristique, odio quis commodo tincidunt, nulla arcu accumsan nunc, in
+        iaculis mi erat eget lacus. In tellus tortor, efficitur at finibus ac,
+        pretium a tellus. Pellentesque metus enim, vestibulum a felis nec,
+        iaculis faucibus ex. Suspendisse facilisis massa ac dui lacinia, id
+        rhoncus sem fermentum. Suspendisse sed odio vel dui vehicula rhoncus nec
+        vitae metus.
       </p>
       <br />
 
       <p>
-        My core values are honesty, loyalty, teamwork etc. I look forward to
-        working with cutting-edge technologies in corporations, adding value to
-        organizational growth and development through dynamic and innovative
-        skills with the aim of achieving corporate goals and objectives. 
-      
+        Mauris ante est, efficitur nec sapien et, dictum faucibus lorem. In
+        euismod sed erat in tempus. Integer blandit tortor vel sem vehicula
+        ultricies. Morbi fermentum magna in dui semper, eget dapibus est
+        lobortis. Etiam dignissim scelerisque orci, sed tincidunt mauris blandit
+        nec. Pellentesque sit amet condimentum tellus. Vivamus ultricies libero
+        molestie massa vulputate facilisis. Duis vestibulum, nisi eget mollis
+        maximus, nulla arcu ullamcorper ex, congue lacinia massa felis vel elit.
+        Sed mattis metus vitae arcu faucibus, in feugiat mi blandit. Fusce in
+        tellus vehicula, aliquet erat placerat, sagittis odio.
       </p>
     </div>
   );
